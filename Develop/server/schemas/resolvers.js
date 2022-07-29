@@ -5,6 +5,7 @@ const { User } = require('../models');
 const resolvers = {
     Query: {
         me: async (parent, args, context) => {
+            //identify user
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user._id })
                 .select('-__v -password')
@@ -13,6 +14,7 @@ const resolvers = {
             throw new AuthenticationError('Not logged in');
         }
     },
+    
     Mutation: {
         addUser: async (parent, args) => {
             const user = await User.create(args);
