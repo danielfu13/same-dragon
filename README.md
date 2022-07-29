@@ -12,15 +12,25 @@
 
   ## Project Description
 
-  This project is a CMS-style Tech blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. I have followed the  MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. 
+  This task for this project was to use starter code that is fully functioning with Google Books API search engine build with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. This app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
 
   ## Installation 
 
-  To use application, click on the deployed link <a href="https://robot-ducky.herokuapp.com/">here</a>.
+  To use application, click on the deployed link <a href="https://same-dragon.herokuapp.com/">here</a>.
   
   ## Usage
 
-To use this application, clicked on the deployed link above. After reaching the depoloyed like, sign up for an account and start posting on your daily Tech Blog
+To use this application, clicked on the deployed link above. 
+
+Another way of running this project is by downloading the github repository. Make sure all the npm packages are downloaded using the command: 
+
+`$ npm install`
+
+After all the packages are installed, use the commands:
+
+`$ cd Develop/`
+
+`$ npm run develop`
 
   ## Contributors
 
@@ -37,14 +47,16 @@ To use this application, clicked on the deployed link above. After reaching the 
     * CSS
     * JavaScript
     * Express
-    * Express-Handlebars
-    * Express-Session
-    * MySql2
     * Sequelize
-    * Connect-Session-Sequelize
-    * Handlebars
+    * apollo-server-express
     * Bcrypt
     * Dotenv
+    * jsonwebtoken
+    * mongoose
+    * graphql
+    * react
+    * bootstrap
+    * jwt-decode
 
   ## Contact Information:
   [GitHub](https://github.com/danielfu13)
