@@ -8,7 +8,7 @@ import Auth from '../utils/auth';
 import { useMutation } from '@apollo/react-hooks';
 
 //import loginUser from mutations
-import { LOGIN_USER } from '../utils/mutations';
+import { USER_LOGIN } from '../utils/mutations';
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
@@ -16,7 +16,7 @@ const LoginForm = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   //add loginUser
-  const [loginUser] = useMutation(LOGIN_USER);
+  const [loginUser] = useMutation(USER_LOGIN);
 
     const handleInputChange = (event) => {
     const { name, value } = event.target;
